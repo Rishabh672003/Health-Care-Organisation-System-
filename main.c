@@ -95,9 +95,9 @@ int output()
   printf("\t Do you want to re-submit the form or EXIT ?");
   printf("\t1. Continue\n");
   printf("\t2. EXIT\n");
-  scanf("%d", &exit);
+  scanf("%d", &exit_task);
     
-    switch(exit)
+    switch(exit_task)
     {
     	case 1 :main();
     		break;
