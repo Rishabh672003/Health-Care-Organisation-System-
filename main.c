@@ -84,7 +84,7 @@ int exit2() {
     printf("\t Do you want to re-submit the form or EXIT ?");
     printf("\t1. Continue\n");
     printf("\t2. EXIT\n");
-	return 0; 
+    return 0;
 }
 
 int main() {
@@ -95,5 +95,18 @@ int main() {
     printf(
         "-------------------------------------------------------------------\n");
     details();
-	exit2();
+    exit2();
+
+    int exit_task;
+    scanf("%d", &exit_task);
+
+    switch (exit_task) {
+    case 1:
+        main();
+        break;
+    case 2:
+        printf("\tHopeyou enjoyed it! STAY SAFE");
+        break;
+    }
+    return 0;
 }
