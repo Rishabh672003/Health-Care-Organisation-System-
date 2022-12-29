@@ -85,25 +85,26 @@ int details() {
     return 0;
 }
 
-int do_it_again() {
-    printf(
-        "-------------------------------------------------------------------\n");
-    printf(
-        "                  Health Care Organisation System                  \n");
-    printf(
-        "-------------------------------------------------------------------\n");
+int health_care() {
     details();
     output();
     return 0;
 }
 
 int main() {
+    printf(
+        "-------------------------------------------------------------------\n");
+    printf(
+        "                  Health Care Organisation System                  \n");
+    printf(
+        "-------------------------------------------------------------------\n");
+    puts("Enter 1 for entering your details and 2 to exit the program - ");
     int exit_task;
     scanf("%d", &exit_task);
 
     switch (exit_task) {
     case 1:
-        do_it_again();
+        health_care();
         break;
     case 2:
         printf("\tHopeyou enjoyed it! STAY SAFE");
