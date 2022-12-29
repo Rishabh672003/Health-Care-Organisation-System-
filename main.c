@@ -87,7 +87,7 @@ int exit2() {
     return 0;
 }
 
-int main() {
+int do_it_again() {
     printf(
         "-------------------------------------------------------------------\n");
     printf(
@@ -96,13 +96,16 @@ int main() {
         "-------------------------------------------------------------------\n");
     details();
     exit2();
+    return 0;
+}
 
+int main() {
     int exit_task;
     scanf("%d", &exit_task);
 
     switch (exit_task) {
     case 1:
-        main();
+        do_it_again();
         break;
     case 2:
         printf("\tHopeyou enjoyed it! STAY SAFE");
