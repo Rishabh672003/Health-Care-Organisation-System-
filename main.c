@@ -7,16 +7,6 @@ int age1, doa;
 long long con_num1, con_num2;
 char name1[100], name2[100], sym[50], add1[100], bg1[3], gen1[11], rel[50];
 
-int main() {
-    printf(
-        "-------------------------------------------------------------------\n");
-    printf(
-        "                  Health Care Organisation System                  \n");
-    printf(
-        "-------------------------------------------------------------------\n");
-    details();
-}
-
 int details() {
     // Taking Patient Details and storing The Data.
 
@@ -58,7 +48,7 @@ int details() {
     return 0;
 }
 
-int exit() {
+int exit2() {
 
     printf("-------------------> Health Care Organistion <-----------------\n");
     printf("\n");
@@ -94,20 +84,16 @@ int exit() {
     printf("\t Do you want to re-submit the form or EXIT ?");
     printf("\t1. Continue\n");
     printf("\t2. EXIT\n");
-	int exit_task;
-    scanf("%d", &exit_task);
-
-    switch (exit_task) {
-    case 1:
-        main();
-        break;
-    case 2:
-        printf("\tHopeyou enjoyed it! STAY SAFE");
-        break;
-    }
-    return 0;
+	return 0; 
 }
 
-int output() {
-	exit();
+int main() {
+    printf(
+        "-------------------------------------------------------------------\n");
+    printf(
+        "                  Health Care Organisation System                  \n");
+    printf(
+        "-------------------------------------------------------------------\n");
+    details();
+	exit2();
 }
