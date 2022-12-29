@@ -37,11 +37,11 @@ int output() {
     printf("\tPatient's Symptoms: %s\n", sym);
 
     printf("\n");
-    printf("\n");
 
-    printf("\t\n Do you want to re-submit the form or EXIT ?");
-    printf("\t1.\n Continue\n");
-    printf("\t2.\n EXIT\n");
+    printf("\t\n Do you want to re-submit the form or EXIT ?\n");
+    printf("\t1. Continue\n");
+    printf("\t2. EXIT\n");
+    printf("Your answer - ");
     return 0;
 }
 
