@@ -58,8 +58,7 @@ int details() {
     return 0;
 }
 
-int output() {
-    int exit();
+int exit() {
 
     printf("-------------------> Health Care Organistion <-----------------\n");
     printf("\n");
@@ -95,6 +94,7 @@ int output() {
     printf("\t Do you want to re-submit the form or EXIT ?");
     printf("\t1. Continue\n");
     printf("\t2. EXIT\n");
+	int exit_task;
     scanf("%d", &exit_task);
 
     switch (exit_task) {
@@ -106,4 +106,8 @@ int output() {
         break;
     }
     return 0;
+}
+
+int output() {
+	exit();
 }
