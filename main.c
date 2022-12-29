@@ -98,7 +98,7 @@ int main() {
         "                  Health Care Organisation System                  \n");
     printf(
         "-------------------------------------------------------------------\n");
-    puts("Enter 1 for entering your details and 2 to exit the program - ");
+    health_care();
     int exit_task;
     scanf("%d", &exit_task);
 
