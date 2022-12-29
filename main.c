@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int age1, doa;
+int age1;
 long long con_num1, con_num2;
-char name1[100], name2[100], sym[50], add1[100], bg1[3], gen1[11], rel[50];
+char name1[100], name2[100], sym[50], add1[100], bg1[3], gen1[11], rel[50],
+     doa[20];
 
 int output() {
 
@@ -38,9 +39,9 @@ int output() {
     printf("\n");
     printf("\n");
 
-    printf("\t Do you want to re-submit the form or EXIT ?");
-    printf("\t1. Continue\n");
-    printf("\t2. EXIT\n");
+    printf("\t\n Do you want to re-submit the form or EXIT ?");
+    printf("\t1.\n Continue\n");
+    printf("\t2.\n EXIT\n");
     return 0;
 }
 
@@ -58,7 +59,7 @@ int details() {
     scanf("%10s", gen1);
 
     printf("Date OF Addmission: ");
-    scanf("%i", &doa);
+    scanf("%19s", doa);
 
     printf("Enter Blood Group: ");
     scanf("%2s", bg1);
@@ -81,7 +82,6 @@ int details() {
     printf("\n");
     printf("\n");
 
-    output();
     return 0;
 }
 
