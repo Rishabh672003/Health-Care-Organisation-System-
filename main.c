@@ -107,7 +107,7 @@ int main() {
         health_care();
         break;
     case 2:
-        printf("\tHopeyou enjoyed it! STAY SAFE");
+        printf("\n\tHope you enjoyed it! STAY SAFE");
         break;
     }
     return 0;
