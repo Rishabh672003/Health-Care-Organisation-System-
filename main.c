@@ -6,45 +6,6 @@ long long con_num1, con_num2;
 char name1[100], name2[100], sym[50], add1[100], bg1[3], gen1[11], rel[50],
      doa[20];
 
-int output() {
-
-    printf("-------------------> Health Care Organistion <-----------------\n");
-    printf("\n");
-    printf("---------------------------------------------------------------\n");
-    printf("                       > PAATIENT DETAILS <                    \n");
-    printf("---------------------------------------------------------------\n");
-    printf("\n");
-
-    printf("\tName of the Patient: %s\n", name1);
-    printf("\n");
-    printf("\tPatient's Age: %d\n", age1);
-    printf("\n");
-    printf("\tPatient's Gender: %s\n", gen1);
-    printf("\n");
-    printf("\tPatient's Blood Group: %s\n", bg1);
-    printf("\n");
-    printf("\tPatient's Contact Number: %lld\n", con_num1);
-    printf("\n");
-
-    printf("\tGuardian's Contact Number: %lld\n", con_num2);
-    printf("\n");
-    printf("\tGuardian's Relation with Patient: %s\n", rel);
-    printf("\n");
-
-    printf("\tPatient's Resedential Address: %s\n", add1);
-    printf("\n");
-
-    printf("\tPatient's Symptoms: %s\n", sym);
-
-    printf("\n");
-
-    printf("\t\n Do you want to re-submit the form or EXIT ?\n");
-    printf("\t1. Continue\n");
-    printf("\t2. EXIT\n");
-    printf("Your answer - ");
-    return 0;
-}
-
 int details() {
     // Taking Patient Details and storing The Data.
 
@@ -82,6 +43,45 @@ int details() {
     printf("\n");
     printf("\n");
 
+    return 0;
+}
+
+int output() {
+
+    printf("-------------------> Health Care Organistion <-----------------\n");
+    printf("\n");
+    printf("---------------------------------------------------------------\n");
+    printf("                       > PAATIENT DETAILS <                    \n");
+    printf("---------------------------------------------------------------\n");
+    printf("\n");
+
+    printf("\tName of the Patient: %s\n", name1);
+    printf("\n");
+    printf("\tPatient's Age: %d\n", age1);
+    printf("\n");
+    printf("\tPatient's Gender: %s\n", gen1);
+    printf("\n");
+    printf("\tPatient's Blood Group: %s\n", bg1);
+    printf("\n");
+    printf("\tPatient's Contact Number: %lld\n", con_num1);
+    printf("\n");
+
+    printf("\tGuardian's Contact Number: %lld\n", con_num2);
+    printf("\n");
+    printf("\tGuardian's Relation with Patient: %s\n", rel);
+    printf("\n");
+
+    printf("\tPatient's Resedential Address: %s\n", add1);
+    printf("\n");
+
+    printf("\tPatient's Symptoms: %s\n", sym);
+
+    printf("\n");
+
+    printf("\t\n Do you want to re-submit the form or EXIT ?\n");
+    printf("\t1. Continue\n");
+    printf("\t2. EXIT\n");
+    printf("Your answer - ");
     return 0;
 }
 
