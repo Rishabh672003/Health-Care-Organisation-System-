@@ -99,7 +99,7 @@ int main() {
     printf(
         "-------------------------------------------------------------------\n");
     health_care();
-    while (1) {
+    for (;;) {
         int exit_task;
         scanf("%i", &exit_task);
         if (exit_task == 1) {
