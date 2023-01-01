@@ -99,15 +99,13 @@ int main() {
     printf(
         "-------------------------------------------------------------------\n");
     health_care();
-    int exit_task;
-    scanf("%d", &exit_task);
-
-    switch (exit_task) {
-    case 1:
-        health_care();
-        break;
-    case 2:
-        printf("\n\tHope you enjoyed it! STAY SAFE");
+    while (1) {
+        int exit_task;
+        scanf("%i", &exit_task);
+        if (exit_task == 1) {
+            health_care();
+            continue;
+        }
         break;
     }
     return 0;
